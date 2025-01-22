@@ -1,0 +1,37 @@
+## Account
+POST /api/account : Création d'un compte utilisateur
+GET /api/account : Récupération de tous les utilisateurs
+
+## Cart
+GET /api/cart : Récupération du panier de l'utilisateur connecté (il faut etre connecté au préalable via le token)
+POST /api/cart/add : Ajout d'un produit dans le panier
+DELETE /api/cart/remove : Supprimer un produit du panier
+DELETE /api/cart/clear : vide le panier
+
+## Product 
+POST /api/products : Ajout/Création d'un produit
+GET /api/products : Récupère tous les produits
+GET /api/products/{id] : Récupère un produit via son id
+PATCH /api/products/{id} : Modifie un produit existant via son id
+DELETE /api/products/{id} : supprime un produit via son id
+
+## Token
+POST /token : Récupère le token à partir d'un utilisateur existant
+Exemple de requète :  
+{
+  "email": "walterwhite@example.com",
+  "password": "jessiepinkman"
+}
+Retour :
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN0cmluZyIsImVtYWlsIjoidXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTczNzU1OTgxOSwiZXhwIjoxNzM3NTYzNDE5LCJpYXQiOjE3Mzc1NTk4MTl9.0AtVCBYjYRxBk5J-Lz2amZy-n_L_ButBw-RKiYrlXrM"
+}
+
+## Wishlist
+GET /api/wishlist : Récupération de la liste des envies de l'utilisateur connecté (il faut etre connecté au préalable via le token)
+POST /api/wishlislt/add : Ajout d'une envie dans la liste
+DELETE /api/wishlist/remove : Supprimer une envie de la liste
+DELETE /api/wishlist/clear : vide la liste des envies
+
+
+Regarder des exemples de certains tests que j'ai effectué dans le fichier "tests"
