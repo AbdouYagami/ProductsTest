@@ -1,0 +1,44 @@
+[
+  {
+    "UserEmail": "admin",
+    "Products": [
+      {
+        "Id": 21,
+        "Code": "string",
+        "Name": "Product with defaults",
+        "Description": "",
+        "Image": "",
+        "Category": "",
+        "Price": 10.0,
+        "Quantity": 50,
+        "InternalReference": "",
+        "ShellId": 0,
+        "InventoryStatus": 1,
+        "Rating": 3.0,
+        "CreatedAt": "0001-01-01T00:00:00",
+        "UpdatedAt": "0001-01-01T00:00:00"
+      }
+    ]
+  },
+  {
+    "UserEmail": "heisenberg",
+    "Products": [
+      {
+        "Id": 7,
+        "Code": "newCode",
+        "Name": "Partial Update Name",
+        "Description": "Partial Update Description",
+        "Image": "newImage.jpg",
+        "Category": "newCategory",
+        "Price": 100.50,
+        "Quantity": 50,
+        "InternalReference": "newRef",
+        "ShellId": 1,
+        "InventoryStatus": 1,
+        "Rating": 0.0,
+        "CreatedAt": "2025-01-01T00:00:00Z",
+        "UpdatedAt": "2025-01-20T19:57:45.388Z"
+      }
+    ]
+  }
+]
